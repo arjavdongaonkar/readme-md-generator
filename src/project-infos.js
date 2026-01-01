@@ -20,7 +20,7 @@ const GITHUB_URL = 'https://github.com/'
  */
 const cleanReposUrl = reposUrl =>
   reposUrl
-    .replace('\n', '')
+    .replace(/\n/g, '')
     .replace('git+', '')
     .replace('.git', '')
 
